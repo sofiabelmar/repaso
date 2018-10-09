@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="practica_p02.CntrolOtros"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:practica_p02"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="Coral">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Operaciones:</TextBlock>
+        <TextBox Width="140" Name="txtOperaciones" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">Mascotas:</TextBlock>
+        <TextBox Width="140" Name="txtMascotas" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">Organo</TextBlock>
+        <ComboBox Name="cbOrgano" Width="200" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ComboBoxItem>Panqueca</ComboBoxItem>
+            <ComboBoxItem>Tubo</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</UserControl>

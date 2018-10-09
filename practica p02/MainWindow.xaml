@@ -1,0 +1,48 @@
+﻿<Window x:Class="practica_p02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practica_p02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">TITULO</TextBlock>
+        <TextBlock Name="lblNombre" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">Nombre:</TextBlock>
+        <TextBox Name="txtNombre" Grid.Row="2" Width="140"></TextBox>
+        <TextBlock Name="lblContraseña" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">Contraseña:</TextBlock>
+        <TextBox Name="txtContraseña" Grid.Row="4" Width="140"></TextBox>
+
+        <ComboBox Name="cbTipo" Grid.Row="6" Width="200" SelectionChanged="cbTipo_SelectionChanged">
+            <ComboBoxItem>Hombre</ComboBoxItem>
+            <ComboBoxItem>Mujer</ComboBoxItem>
+            <ComboBoxItem>Otro</ComboBoxItem>
+        </ComboBox>
+
+        <StackPanel Name="panelTipo" Grid.Row="7"></StackPanel>
+
+        <Button Grid.Row="8" Width="140" Name="btnAceptar" Click="btnAceptar_Click">ACEPTAR</Button>
+        <TextBlock Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center">Respuesta:</TextBlock>
+        <TextBox Name="txtRespuesta" Grid.Row="10" Width="140"></TextBox>
+        
+    </Grid>
+</Window>
